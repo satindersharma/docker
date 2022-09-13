@@ -18,3 +18,24 @@ above -f is look for this specific file(as default is docker-compose.yml)
 #### To see the logs
 `docker logs CONTANER_NAME`
 
+---
+### All images
+
+#### `docker image ls`
+
+---
+## To list services
+
+### `docker compose ps`
+##### -f flag let specify custom docker  compose yml (by default it is `docker-compose.yml`)
+
+### `docker compose -f docker-compose-staging.yml ps`
+
+---
+
+### To restart
+
+#### `docker-compose restart mysql`
+#### `docker compose -f docker-compose-staging.yml restart`
+
+#### `docker compose -f docker-compose-staging.yml restart crawler-api`
