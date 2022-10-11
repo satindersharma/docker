@@ -39,3 +39,19 @@ above -f is look for this specific file(as default is docker-compose.yml)
 #### `docker compose -f docker-compose-staging.yml restart`
 
 #### `docker compose -f docker-compose-staging.yml restart crawler-api`
+
+
+
+
+### Always check for the docker oficial image with an alpine version https://hub.docker.com/
+#### `docker pull python:3.10` has a size of 867 MB
+### but 
+#### `docker pull python:3.10-alpine`  has a size of 48 MB
+
+#### to run directly
+
+### `docker run -it --rm python:3.10-alpine`
+
+
+
+
