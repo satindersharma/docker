@@ -44,6 +44,9 @@ above -f is look for this specific file(as default is docker-compose.yml)
 
 
 ### Always check for the docker oficial image with an alpine version https://hub.docker.com/
+
+#### `image:[version number]-alpine` or `image:tag`
+
 #### `docker pull python:3.10` has a size of 867 MB
 ### but 
 #### `docker pull python:3.10-alpine`  has a size of 48 MB
@@ -54,4 +57,14 @@ above -f is look for this specific file(as default is docker-compose.yml)
 
 
 
+### `docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres:13-alpine`
+### `docker run --name postgresql_container_name -e POSTGRES_USER=myusername -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres:13-alpine`
+
+### get into bash of container
+### `docker exec -it postgresql_container_name bash`
+### Login with user and pasword
+### `psql -U myusername`
+### `CREATE DATABASE dbname;`
+### to see db
+### `\l`
 
