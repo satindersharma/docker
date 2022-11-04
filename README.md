@@ -4,6 +4,8 @@
 
 #### `docker ps`
 
+#### `docker ps -a`
+
 #### `docker-compose -f docker-compose-staging.yml up -d`
 above -f is look for this specific file(as default is docker-compose.yml)
 
